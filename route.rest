@@ -1,0 +1,32 @@
+//get all
+GET http://localhost:5000/v1/articles
+user:1
+
+### 
+
+//get one 
+GET http://localhost:5000/v1/article/3
+user: 1
+
+###
+
+//add one
+POST http://localhost:5000/v1/articles
+Content-Type: application/json
+user: 1
+
+{
+    "title": "new title",
+    "text": "new text",
+    "image": "new image"
+}
+###
+PUT http://localhost:5000/v1/articles
+Content-Type: application/json
+user: 1
+
+{
+    "title": "new edited title",
+    "text": "new edited text"
+    
+}
